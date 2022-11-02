@@ -27,8 +27,8 @@ def main():
     # Load data and NLP models
     test_corpus = pickle.load(open(test_corpus_path, "rb"))
     test_pdf = pickle.load(open(test_pdf_path, "rb"))
-    #tf_vectorizer_model = pickle.load(open(tf_vectorizer_model_path, "rb"))
-    #tfidf_vectorizer_model = pickle.load(open(tfidf_vectorizer_model_path, "rb"))
+    tf_vectorizer_model = pickle.load(open(tf_vectorizer_model_path, "rb"))
+    tfidf_vectorizer_model = pickle.load(open(tfidf_vectorizer_model_path, "rb"))
     topic_dict = pickle.load(open(topic_dict_path, "rb"))
     lda_model = pickle.load(open(lda_model_path, "rb"))
 
