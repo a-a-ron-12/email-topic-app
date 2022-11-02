@@ -9,8 +9,8 @@ from random import randrange, randint
 # Initialize parameters
 test_corpus_path = 'data/test_corpus.pkl'
 test_pdf_path = 'data/test_pdf.pkl'
-#tf_vectorizer_model_path = 'models/tf_vectorizer_model.pkl'
-#tfidf_vectorizer_model_path = 'models/tfidf_vectorizer_model.pkl'
+tf_vectorizer_model_path = 'models/tf_vectorizer_model.pkl'
+tfidf_vectorizer_model_path = 'models/tfidf_vectorizer_model.pkl'
 topic_dict_path = 'data/topic_dict.pkl'
 lda_model_path = 'models/lda_model.pkl'
 
@@ -27,8 +27,8 @@ def main():
     # Load data and NLP models
     test_corpus = pickle.load(open(test_corpus_path, "rb"))
     test_pdf = pickle.load(open(test_pdf_path, "rb"))
-    tf_vectorizer_model = pickle.load(open(tf_vectorizer_model_path, "rb"))
-    tfidf_vectorizer_model = pickle.load(open(tfidf_vectorizer_model_path, "rb"))
+    #tf_vectorizer_model = pickle.load(open(tf_vectorizer_model_path, "rb"))
+    #tfidf_vectorizer_model = pickle.load(open(tfidf_vectorizer_model_path, "rb"))
     topic_dict = pickle.load(open(topic_dict_path, "rb"))
     lda_model = pickle.load(open(lda_model_path, "rb"))
 
